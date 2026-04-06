@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>القرآن - زاد المتون</title><meta name="description" content="القرآن الكريم"> <link rel="icon" href="assets/fav.ico" type="image/x-icon">
+<link rel="shortcut icon" href="assets/fav.ico" type="image/x-icon"><link rel="stylesheet" href="assets/css/style.css"></head>
+<body>
+<div data-current-page="quran"></div>
+
+<header class="topbar">
+  <div class="container nav">
+    <div class="brand">
+      <a href="index.html" data-page="home">  <div class="brand-badge">۞</div></a>
+      <div class="brand-text">
+          <a href="index.html" data-page="home">  <div>زاد المتون</div></a>
+        <a href="index.html" data-page="home"><small>المتون · القرآن · الدروس</small></a>
+      </div>
+    </div>
+    <button class="menu-btn" aria-label="القائمة">☰</button>
+    <nav class="nav-links">
+      <a href="index.html" data-page="home">الرئيسية</a>
+      <a href="mutoon.html" data-page="mutoon">المتون</a>
+      <a href="quran.html" data-page="quran">القرآن</a>
+      <a href="lessons.html" data-page="lessons">الدروس</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="page-title">
+    <h1>القرآن الكريم</h1>
+    <p>فهرس أجزاء أو سور، ثم قارئ صفحة كبير وسهل التنقل مع الرجوع إلى الفهرس.</p>
+  </section>
+
+  <div class="reader-actions" style="margin-bottom:18px">
+    <button id="browse-juz" class="btn btn-primary">عرض بالأجزاء</button>
+    <button id="browse-surah" class="btn btn-secondary">عرض بالسور</button>
+  </div>
+
+  <div id="index-view">
+    <section class="quick-links" style="margin-bottom:18px">
+      <div class="quick-link"><strong>فهرس الأجزاء</strong><span class="muted">اختر الجزء من البطاقات مباشرة.</span></div>
+      <div class="quick-link"><strong>فهرس السور</strong><span class="muted">يمكنك التصفح باسم السورة ثم فتح أول صفحة منها.</span></div>
+      <div class="quick-link"><strong>تنقل أسهل</strong><span class="muted">السابق، التالي، والانتقال المباشر لرقم الصفحة.</span></div>
+    </section>
+    <section id="juz-index" class="quran-index-grid"></section>
+    <section id="surah-index" class="quran-index-grid" style="display:none"></section>
+  </div>
+
+  <div id="reader-view" style="display:none">
+    <div class="reader-actions" style="margin-bottom:12px">
+      <button id="back-to-index" class="btn btn-secondary">رجوع إلى الفهرس</button>
+    </div>
+    <div class="quran-shell">
+      <aside class="quran-sidebar">
+        <div class="card">
+          <h3 style="margin-top:0">التحكم</h3>
+          <div class="info-list">
+            <div class="info-item"><strong id="meta-juz">الجزء 1</strong></div>
+            <div class="info-item"><strong id="meta-page">الصفحة 1</strong></div>
+            <div class="info-item"><span id="meta-surah">القرآن الكريم</span></div>
+          </div>
+          <div style="margin-top:14px">
+            <label class="muted" for="view-mode">طريقة العرض</label>
+            <select id="view-mode" class="input" style="margin-top:8px">
+              <option value="image" selected>صورة الصفحة</option>
+              <option value="text">نص الصفحة</option>
+            </select>
+          </div>
+          <div style="margin-top:14px">
+            <label class="muted" for="page-number">اذهب إلى صفحة</label>
+            <input id="page-number" class="input" type="number" min="1" max="604" value="1" style="margin-top:8px">
+          </div>
+          <div class="reader-actions" style="margin-top:14px">
+            <button id="prev-page" class="btn btn-secondary">الصفحة السابقة</button>
+            <button id="go-page" class="btn btn-primary">اذهب</button>
+            <button id="next-page" class="btn btn-secondary">الصفحة التالية</button>
+          </div>
+        </div>
+      </aside>
+      <section class="quran-reader">
+        <div class="reader-toolbar">
+          <div class="reader-meta">
+            <span id="meta-juz-inline" class="page-badge">الجزء</span>
+            <span id="meta-page-inline" class="page-badge">الصفحة</span>
+          </div>
+        </div>
+        <div id="page-host"></div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3 style="margin-top:0">زاد المتون</h3>
+      <p>موقع علمي يجمع المتون والقرآن والدروس في واجهة واضحة وسريعة.</p>
+	  <p>info@durus.ly - info@durus.org.ly</p>
+    </div>
+    <div>
+      <h3 style="margin-top:0">الأقسام</h3>
+      <p><a href="mutoon.html">المتون</a> · <a href="quran.html">القرآن</a> · <a href="lessons.html">الدروس</a></p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/quran.js"></script>
+<a href="#" class="top-arrow">⇧</a>
+</body></html>
